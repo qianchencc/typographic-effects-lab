@@ -1,0 +1,20 @@
+Use case: stylized-concept.
+Create ONE finished flat portrait typographic exhibition poster, exact 9:16 aspect ratio, at the highest available native resolution. The supplied poster is the visual reference for a close reconstruction study. Preserve its four stacked word levels, structural line logic, palette, relative scale and bottom editorial information grid. Produce only the full-bleed artwork; no frame, room, mockup, device or comparison sheet.
+
+Palette: dusty muted rose background approximately #DBA3A3, extremely dark navy lettering, warm pale cream fine lines, sparse dark brick-red slice accents. Slight uniform paper grain.
+The actual type forms the entire graphic image. Do not place ordinary intact type on top of unrelated stripe decoration.
+Top field: the exact word "SPECTRAL" in enormous tall condensed dark navy capitals, sliced by diagonal parallel cream gaps. The word follows the same descending diagonal architecture and spatial stepped cuts as the reference, with subtle vertical trails at the lower edges.
+Next narrow band: the exact word "SLICE" cut into horizontal strips, some displaced laterally. Its letters remain clearly legible, with navy, cream and a few burgundy short strip fragments.
+Dominant middle: the exact word "FOLD" constructed as deeply layered parallel outline-letter contours folded across two clear angular planes. This is graphic dimensionality created by contour offsets and sharply changing line direction, not a glossy 3D extruded object. Keep all four letters F O L D readable, especially the O counter and the L separation. Large contour lines bend around the O and D while straight edges kink into convincing crease geometry.
+Lower graphic band: the exact word "REFORM" made of aligned horizontal slice strips, with controlled displaced bars and a sparse dot or square sampling grid. Preserve strong word structure and abundant visual density.
+Keep different mechanisms distinct: diagonal slices for SPECTRAL, lateral strips for SLICE and REFORM, folded parallel contours for FOLD. No rainbow colors, lens flare, glow, metallic surfaces, blurred moire or random zigzags.
+
+Text, verbatim:
+Upper right: "SPECTRUM / SLICE / FOLD"; "Audiovisual Installation Program".
+Footer left: "SPECTRAL" and below "FOLD"; "A signal changes when" and "its structure is rearranged."
+Footer middle: "Spectrum Study"; "Spatial Division"; "Reconstruction Session".
+Footer right: "2026.12.12"; "18:00 — 21:00"; "Projection Hall / Gallery F".
+Bottom: "Winter Program 2026".
+Use the reference's thin horizontal line above the footer, quiet vertical column separators, short baseline rules and clean dark navy sans-serif small typography. Footer text is flat and undistorted.
+No watermark, no added logos, no added words, no border, no caption outside the artwork. The supplied reference defines the composition.
+

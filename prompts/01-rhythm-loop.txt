@@ -1,0 +1,20 @@
+Use case: stylized-concept.
+Create ONE finished flat portrait typographic exhibition poster, exact 9:16 aspect ratio, at the highest available native resolution. The supplied image is the visual reference for this reconstruction study. Closely reconstruct its composition, typography-as-image mechanisms, palette and visual density. This is a single full-bleed artwork, not a mockup, screenshot, framed print or comparison sheet.
+
+Palette: warm ivory paper approximately #F3EDDA, deep near-black ink, very sparing vermilion and muted blue-gray line accents. Subtle even paper texture only.
+Composition: oversized stacked word structures occupy the upper 80 percent of the poster, with a clean precisely typeset three-column footer below. Preserve the asymmetric upper-right small label. Letters are the illustration itself, not plain solid letters with decorative lines placed over them.
+Top third: the exact word "RHYTHM" is constructed from dense vertical tapered black pulses, needles and aligned dot trains, with variable lengths revealing tall condensed capital letters. Fine red pulse endpoints appear sparingly.
+Center: the exact word "LOOP" is huge and built from approximately 9 to 14 nested parallel rounded racetrack contour lines. Its two O counters remain distinct and open; the L and P remain readable. Lines route fluidly around corners and join neighboring structures, with tiny directional arrows and only a few red and blue-gray tracks.
+Below: the exact word "BEAT" is made of crisp aligned round dots on a regular grid. Some dots dissolve into short horizontal rhythm marks.
+Lower main field: the exact word "RETURN" spans the width as nested rounded rectilinear parallel paths, cropped only as in the reference. Preserve the generous scale and the clear letter counters.
+Carefully control the transitions between needle, line and dot modes. Lines should be confidently drawn, crisp, evenly spaced and visibly separate, not fuzzy, tangled, wobbly scribbles, embossed metal, a wire bundle or an arbitrary waveform.
+
+Typeset the following secondary text neatly and verbatim, matching the reference hierarchy:
+Upper right: "RHYTHM / PULSE / LOOP"; "Experimental Rhythm Program".
+Footer left: "RHYTHM" on one line and "LOOP" below; "Every rhythm begins" and "by returning."
+Footer middle: "Pulse Study"; "Loop Performance"; "Rhythmic Sequence".
+Footer right: "2026.12.05"; "20:00 — 22:00"; "Performance Hall / Studio E".
+Bottom: "Winter Program 2026".
+Use thin vertical separators between footer columns, short small rules, and a long quiet bottom rule. Keep this small text flat, undistorted and readable.
+No added graphics, no logo, no watermark, no platform UI, no glow, no gradients, no drop shadows, no extra words. Keep the full poster edge to edge.
+

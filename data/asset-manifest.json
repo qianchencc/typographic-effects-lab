@@ -1,0 +1,52 @@
+[
+  {
+    "id": "01-rhythm-loop",
+    "file": "outputs/01-rhythm-loop.png",
+    "format": "PNG",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "bytes": 2510098,
+    "sha256": "a217392fc7347e472ed4550a7a944d8f6dca4f15d4933666b0a34ff48d8c521f"
+  },
+  {
+    "id": "02-spectral-fold",
+    "file": "outputs/02-spectral-fold.png",
+    "format": "PNG",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "bytes": 2956090,
+    "sha256": "c446b1246aaab288a42c6c88fdbef02768f10cbaa18b0ce261083eaff62bb475"
+  },
+  {
+    "id": "03-urban-echo",
+    "file": "outputs/03-urban-echo.png",
+    "format": "PNG",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "bytes": 2360802,
+    "sha256": "15942cff133029801d9eb1c6d190c3c7adfe54a69738ea992c6c0d58cae79cdb"
+  },
+  {
+    "id": "04-wave-memory",
+    "file": "outputs/04-wave-memory.png",
+    "format": "PNG",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "bytes": 3341183,
+    "sha256": "b690dfd086abcf36996e3e3faf61373d4be73bc44a86ce850fea18f9c6e6eb3b"
+  },
+  {
+    "id": "05-urban-echo-text-only",
+    "file": "outputs/05-urban-echo-text-only.png",
+    "format": "PNG",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "bytes": 2541034,
+    "sha256": "29164c69ab7259f9cceef5996f29bc7c0a773b382ea0a404320046f908b5d5ab"
+  }
+]

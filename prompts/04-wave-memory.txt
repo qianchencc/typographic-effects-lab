@@ -1,0 +1,20 @@
+Use case: stylized-concept.
+Create ONE full-bleed flat portrait typographic sound-art exhibition poster at exact 9:16 aspect ratio and highest available native resolution. Closely reconstruct the supplied reference's flowing typographic composition, structural mechanisms, terracotta palette, relative word scale, motion and footer grid. It is a flat printed graphic, not a photographed sheet or mockup.
+
+Palette: rich matte burnt terracotta background approximately #943D1C with pale warm ivory linework and type, strictly two colors. Very subtle uniform paper texture. Avoid orange glow and metallic gold.
+The main graphic is a continuous field of fine ivory wave-like paths flowing diagonally down from upper left, then bending rhythmically through three major typography levels:
+Top: exact word "WAVE", huge, reconstructed through variable-width parallel undulating lines. Letter strokes emerge from accumulated thickened segments of the same continuous lines. Readable W A V E, not plain block text with stripes overlaid. At edges, the lines break gradually into aligned dots.
+Middle: exact word "TRACE", thinner and smaller, descending diagonally through the center; made from multiple delicate offset outline contours like a transparent wireframe echo. Keep a clear hierarchy from the much bolder WAVE and MEMORY. Its repeated contours may shift but do not become a filled solid word.
+Main lower-middle: exact word "MEMORY", very large, made of thick-and-thin horizontal wave paths bending strongly around the letter strokes, with smooth troughs and peaks. Every letter remains readable and the O and R counters stay open. Keep the long continuous line flow, not independent detached ribbon letters.
+Lower-right graphic field: exact word "ARCHIVE", formed from short horizontal dashes and orderly dot grids, dissolving into a swept field. Keep controlled rhythm, not random particles.
+Preserve the original diagonal tension, the calm empty lower-left transition area, long vertical drips ending in tiny dots, and a few subtle orthogonal line fragments. Avoid excessive additional geometry.
+
+Typeset these small labels verbatim, clean and undistorted:
+Upper right: "WAVE / TRACE / MEMORY"; "Sound Installation Program".
+Footer left: "WAVE" then "MEMORY"; "Every sound leaves" and "a structure behind."
+Footer middle: "Listening Archive"; "Residual Tone"; "Spatial Drift".
+Footer right: "2026.11.14"; "18:30 — 20:30"; "West Hall / Black Room".
+Bottom: "Autumn Program 2026".
+Keep the three-column footer, thin vertical separators, short rules and the final long horizontal line. A generous readable information zone occupies the bottom 18 percent.
+No glow, gradients, shadow, chrome, raised embossing, 3D ribbon, plain background wave with unrelated solid text, added illustrations, logo, watermark or extra words. Maintain crisp fine line separations and the reference's visual hierarchy.
+

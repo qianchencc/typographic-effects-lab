@@ -1,0 +1,20 @@
+Use case: stylized-concept.
+Generate ONE complete flat portrait typographic exhibition poster in an exact 9:16 aspect ratio, highest available native resolution. No reference image is provided. Construct the poster from the following written design specification alone. Deliver only the full-bleed poster, not an object, photograph, screenshot or sheet of variations.
+
+Two-color screen-print feeling: deep dark forest-green background approximately #033A2A and warm pale ivory ink. Keep the background calm, with just very subtle uniform paper texture. No additional colors.
+Stack four distinct typography mechanisms into one connected architectural graphic spanning the upper 77 percent:
+1. "URBAN" across the top, very large condensed capitals formed exclusively by a strict regular grid of round ivory halftone dots, with dot sizes growing inside the letters and reducing into the surrounding field. The U R B A N remain readable. The top contours subtly suggest a city skyline without drawing buildings.
+2. "ECHO" in the center, monumental tall capitals formed from many fine evenly spaced nested ivory contour lines. E and H have disciplined rectilinear corners; C and O have rounded corners. Keep counters, apertures and the four-letter separation clear. The parallel lines create a planar architectural map, not 3D tubes.
+3. "PUBLIC", smaller and right aligned beneath the ECHO field, assembled from thin tapered vertical pulses and narrow stripe thickness modulation, not ordinary solid type.
+4. "SPACE" large across the lower graphic field, revealed by continuous horizontal undulating ivory lines whose density and thickness encode the letters. These lines travel through and around the letters, maintaining coherent flowing bands and clear negative-space counters.
+Let some vertical line trails connect the fields. Preserve the tightly packed but coherent transitions and precise dot spacing described here. Every line and dot should look intentional and crisp.
+
+Text, verbatim:
+Upper left: "CITY / SOUND / PUBLIC"; "Exhibition on Sound and Urban Space"; thin long horizontal rule to the right.
+Below the main graphic, thin full-width horizontal separator.
+Footer central-left: "URBAN ECHO"; "Sound changes when a city listens back."; a short rule; then "Public Listening"; "Acoustic Mapping"; "Spatial Archive".
+Footer right: "2026.11.08—11.29"; "10:00—18:00"; a short rule; "South Block / Gallery Hall".
+Bottom: "Autumn Program 2026" with a long thin rule to the right.
+Use an asymmetric footer with a narrow left margin column and two thin vertical dividing rules. Small text is clean undistorted sans-serif and readable, unlike the structural lettering above.
+Avoid glow, neon, chrome, gradients, fake LED lights, illustrated skyscrapers, grainy speckle noise, rounded card UI or random decorative symbols. No logo, watermark or added words.
+

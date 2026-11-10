@@ -1,0 +1,104 @@
+{
+  "created_on": "2026-11-10",
+  "timezone": "Asia/Shanghai",
+  "generation_method": "ChatGPT built-in image creation",
+  "exact_model_version": null,
+  "exact_model_version_note": "Not exposed by the tool. Original post's Images 2.5 label was not independently verified.",
+  "source_note": "https://www.xiaohongshu.com/explore/6af2c6c1000000001b01f805",
+  "runs": [
+    {
+      "id": "01-rhythm-loop",
+      "title": "节奏循环",
+      "started": "2026-11-10T07:59:23.790Z",
+      "finished": "2026-11-10T08:00:54.558Z",
+      "success": true,
+      "mode": "reference-guided",
+      "prompt_file": "prompts/01-rhythm-loop.txt",
+      "reference_images": [
+        "assets/references/01-rhythm-loop.webp"
+      ],
+      "parameters_explicitly_set": {
+        "transparent_background": false
+      },
+      "size_setting": "9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed",
+      "seed_setting": "not provided",
+      "output_file": "assets/outputs/01-rhythm-loop.png",
+      "iterations": 1
+    },
+    {
+      "id": "02-spectral-fold",
+      "title": "光谱褶皱",
+      "started": "2026-11-10T07:59:23.791Z",
+      "finished": "2026-11-10T08:00:06.444Z",
+      "success": true,
+      "mode": "reference-guided",
+      "prompt_file": "prompts/02-spectral-fold.txt",
+      "reference_images": [
+        "assets/references/02-spectral-fold.webp"
+      ],
+      "parameters_explicitly_set": {
+        "transparent_background": false
+      },
+      "size_setting": "9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed",
+      "seed_setting": "not provided",
+      "output_file": "assets/outputs/02-spectral-fold.png",
+      "iterations": 1
+    },
+    {
+      "id": "03-urban-echo",
+      "title": "都市回声",
+      "started": "2026-11-10T07:59:23.791Z",
+      "finished": "2026-11-10T08:02:30.223Z",
+      "success": true,
+      "mode": "reference-guided",
+      "prompt_file": "prompts/03-urban-echo.txt",
+      "reference_images": [
+        "assets/references/03-urban-echo.webp"
+      ],
+      "parameters_explicitly_set": {
+        "transparent_background": false
+      },
+      "size_setting": "9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed",
+      "seed_setting": "not provided",
+      "output_file": "assets/outputs/03-urban-echo.png",
+      "iterations": 1
+    },
+    {
+      "id": "04-wave-memory",
+      "title": "波浪记忆",
+      "started": "2026-11-10T07:59:23.791Z",
+      "finished": "2026-11-10T08:01:43.891Z",
+      "success": true,
+      "mode": "reference-guided",
+      "prompt_file": "prompts/04-wave-memory.txt",
+      "reference_images": [
+        "assets/references/04-wave-memory.webp"
+      ],
+      "parameters_explicitly_set": {
+        "transparent_background": false
+      },
+      "size_setting": "9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed",
+      "seed_setting": "not provided",
+      "output_file": "assets/outputs/04-wave-memory.png",
+      "iterations": 1
+    },
+    {
+      "id": "05-urban-echo-text-only",
+      "started": "2026-11-10T08:03:30.518Z",
+      "finished": "2026-11-10T08:04:17.838Z",
+      "success": true,
+      "reference_images": [],
+      "mode": "text-only",
+      "prompt_file": "prompts/05-urban-echo-text-only.txt",
+      "parameters_explicitly_set": {
+        "transparent_background": false
+      },
+      "size_setting": "9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed",
+      "seed_setting": "not provided",
+      "output_file": "assets/outputs/05-urban-echo-text-only.png",
+      "iterations": 1
+    }
+  ],
+  "comparison_limitations": "Four reference-guided runs and one text-only run, one result each; prompts differ only where reference-dependent wording must be removed for the text-only run. No fixed seed, no repeats, no statistical similarity score.",
+  "repository_conversion_note": "Prompt file paths normalized for this repository; original prompt content and image bytes are preserved."
+}

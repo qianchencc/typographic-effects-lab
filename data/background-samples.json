@@ -1,0 +1,106 @@
+[
+  {
+    "id": "01-rhythm-loop",
+    "sample_box_xyxy": [
+      420,
+      1560,
+      520,
+      1585
+    ],
+    "meaning": "Median RGB from a shared empty footer area; not a calibrated print color or global color-difference score.",
+    "reference": {
+      "rgb": [
+        243,
+        237,
+        218
+      ],
+      "hex": "#F3EDDA"
+    },
+    "generated": {
+      "rgb": [
+        248,
+        239,
+        216
+      ],
+      "hex": "#F8EFD8"
+    }
+  },
+  {
+    "id": "02-spectral-fold",
+    "sample_box_xyxy": [
+      420,
+      1560,
+      520,
+      1585
+    ],
+    "meaning": "Median RGB from a shared empty footer area; not a calibrated print color or global color-difference score.",
+    "reference": {
+      "rgb": [
+        219,
+        162,
+        163
+      ],
+      "hex": "#DBA2A3"
+    },
+    "generated": {
+      "rgb": [
+        223,
+        162,
+        160
+      ],
+      "hex": "#DFA2A0"
+    }
+  },
+  {
+    "id": "03-urban-echo",
+    "sample_box_xyxy": [
+      420,
+      1560,
+      520,
+      1585
+    ],
+    "meaning": "Median RGB from a shared empty footer area; not a calibrated print color or global color-difference score.",
+    "reference": {
+      "rgb": [
+        3,
+        58,
+        42
+      ],
+      "hex": "#033A2A"
+    },
+    "generated": {
+      "rgb": [
+        1,
+        56,
+        36
+      ],
+      "hex": "#013824"
+    }
+  },
+  {
+    "id": "04-wave-memory",
+    "sample_box_xyxy": [
+      420,
+      1560,
+      520,
+      1585
+    ],
+    "meaning": "Median RGB from a shared empty footer area; not a calibrated print color or global color-difference score.",
+    "reference": {
+      "rgb": [
+        148,
+        61,
+        28
+      ],
+      "hex": "#943D1C"
+    },
+    "generated": {
+      "rgb": [
+        146,
+        54,
+        17
+      ],
+      "hex": "#923611"
+    }
+  }
+]
