@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>字体构图 · 四组海报复刻对照</title>
+<style>
+:root{color-scheme:light;--paper:#f5f3ee;--ink:#20251f;--muted:#646b62;--line:#d9dcd2;--accent:#314c3a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+a{color:inherit;text-underline-offset:4px}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #8c5522;outline-offset:4px}
+.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.masthead{padding:60px 0 38px;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;letter-spacing:.1em;color:var(--muted)}h1{font-size:clamp(32px,5vw,60px);line-height:1.16;letter-spacing:-.045em;margin:20px 0}h2{font-size:26px;line-height:1.3;letter-spacing:-.025em;margin:0}.lede{max-width:740px;margin:0;font-size:17px;color:var(--muted)}.notice{font-size:13px;color:var(--muted);max-width:800px;margin:18px 0 0}.links{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:24px;font-size:13px}.nav{display:flex;flex-wrap:wrap;gap:6px 20px;margin:26px 0 0;padding:0;list-style:none;font-size:13px}.nav a{text-decoration:none;border-bottom:1px solid var(--line)}
+.toolbar{display:none;align-items:center;justify-content:space-between;gap:20px;padding:23px 0;border-bottom:1px solid var(--line)}.js .toolbar{display:flex}.toolbar p{font-size:12px;color:var(--muted);margin:0}.mode-buttons{display:flex;gap:4px;padding:4px;background:#e8eae2;border-radius:9px}.mode-buttons button{border:0;background:transparent;color:var(--muted);padding:7px 14px;border-radius:6px;font-size:13px}.mode-buttons button[aria-pressed="true"]{background:white;color:var(--ink);box-shadow:0 1px 3px #00000012}
+.case{padding:44px 0 40px;border-bottom:1px solid var(--line);scroll-margin-top:20px}.case-head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start;margin-bottom:25px}.case-id{font-size:11px;letter-spacing:.14em;color:var(--muted);margin:0 0 10px}.en-title{display:block;font-size:14px;letter-spacing:.06em;font-weight:500;color:var(--muted);margin-top:6px}.mechanism{font-size:14px;color:var(--muted);margin:23px 0 0;max-width:520px}.palette{display:flex;gap:7px;margin-top:15px}.swatch{display:block;width:16px;height:16px;border-radius:50%;border:1px solid #00000014}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0;min-width:0}.frame{background:#e9e8e2;border:1px solid #0000000c;display:flex;align-items:center;justify-content:center;aspect-ratio:941/1672}.frame a{display:block;width:100%;height:100%}.frame img{display:block;width:100%;height:100%;object-fit:contain}figcaption{display:flex;justify-content:space-between;gap:15px;font-size:12px;margin-top:10px;color:var(--muted)}figcaption strong{font-weight:600;color:var(--ink)}.case-note{font-size:12px;margin:16px 0 0;color:var(--muted)}
+.overlay-view{display:none;max-width:650px;margin:auto}.overlay-stage{position:relative;width:100%;aspect-ratio:941/1672;background:#e9e8e2;border:1px solid #0000000c;--split:50%;overflow:hidden}.overlay-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}.overlay-stage .generated{clip-path:inset(0 calc(100% - var(--split)) 0 0)}.divider{position:absolute;inset:0 auto 0 var(--split);width:2px;background:white;box-shadow:0 0 0 1px #0005;pointer-events:none}.divider:after{content:"↔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:34px;height:34px;border:1px solid #d8d8d8;border-radius:50%;background:white;color:#20251f;font-size:18px;box-shadow:0 2px 6px #0003}.overlay-labels{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin:10px 0}.range-label{display:block;font-size:12px;color:var(--muted);margin-top:14px}.range-label input{display:block;width:100%;accent-color:var(--accent);margin:8px 0 0}.overlay-help{font-size:12px;color:var(--muted);margin:10px 0 0}body[data-mode="overlay"] .pair{display:none}body[data-mode="overlay"] .overlay-view{display:block}
+.experiment-observation{font-size:14px;line-height:1.7;color:var(--muted);margin:20px 0 0}.experiment-observation strong{color:var(--ink);font-weight:600}
+footer{padding:32px 0 55px;font-size:12px;color:var(--muted)}footer p{margin:0 0 10px}.source{overflow-wrap:anywhere}noscript p{padding:12px 16px;border:1px solid var(--line);font-size:13px}
+@media(max-width:650px){.wrap{width:calc(100% - 28px)}.masthead{padding-top:35px}.case-head{grid-template-columns:1fr;gap:0}.mechanism{margin-top:16px}.pair{gap:10px}figcaption{display:block;font-size:11px}figcaption span{display:block}.toolbar{align-items:start;flex-direction:column;gap:12px}.case{padding:30px 0}.case-head{margin-bottom:18px}.notice{font-size:12px}.nav{gap:7px 15px}h2{font-size:23px}}
+@media print{@page{size:A4 portrait;margin:12mm}body{background:white;font-size:10pt}.wrap{width:100%;max-width:none}.masthead{padding:0 0 7mm}.masthead h1{font-size:28pt;margin:4mm 0}.lede{font-size:11pt}.notice,.links,.nav,.toolbar,.overlay-view,.case-note,footer{display:none!important}.case{break-before:page;break-inside:avoid;border:0;padding:0}.case-head{margin-bottom:5mm;gap:7mm}.case-id{margin-bottom:2mm}.mechanism{font-size:9pt;margin-top:6mm}h2{font-size:20pt}.en-title{font-size:10pt}.palette{margin-top:3mm}.pair,body[data-mode="overlay"] .pair{display:grid!important;grid-template-columns:1fr 1fr;gap:5mm}.frame{border:0}figcaption{font-size:8pt;margin-top:2mm}a{text-decoration:none}}
+.records{padding:42px 0;border-bottom:1px solid var(--line);max-width:100%}.records h2{margin:0 0 22px}.records h3{margin:30px 0 14px;font-size:21px}.records h4{font-size:17px;margin:23px 0 10px}.records p,.records li{font-size:14px;max-width:900px}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px;margin:18px 0}th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}th{background:#e9ece3}details{margin:14px 0;border:1px solid var(--line);padding:12px 16px}summary{cursor:pointer;font-weight:600}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.65 ui-monospace,monospace;padding:16px;background:#edf0e8}code{font:12px/1.6 ui-monospace,monospace} @media print{.records{break-before:page}.records table{font-size:8pt}details{break-inside:avoid}}</style>
+</head>
+<body data-mode="side">
+<div class="wrap">
+<header class="masthead">
+  <div class="eyebrow">图像生成复刻研究 · 原帖作者 Blue · 2026-11-10</div>
+  <h1>让字形成为构图。</h1>
+  <p class="lede">四张海报，四种结构：循环、切片、网格与波浪。这里并列保留原帖参考和本次图像生成结果，便于检查文字、层级、配色与线条的实际差异。</p>
+  <p class="notice">原帖素材仅作研究参考。本次没有获取作者的原始工程或提示词；生成结果为位图，不是可编辑的矢量工程。海报内活动日期与地点属于画面内容，不构成活动信息核验。</p>
+  <div class="links"><a href="#records">档案说明</a><a href="#records">提示词与实验记录</a><a href="#reference-analysis">参考拆解</a></div>
+  <ol class="nav"><li><a href="#rhythm">01 节奏循环</a></li><li><a href="#spectral">02 光谱褶皱</a></li><li><a href="#urban">03 都市回声</a></li><li><a href="#wave">04 波浪记忆</a></li><li><a href="#text-only">附加实验 · 仅凭文字</a></li></ol>
+</header>
+<noscript><p>本文件内含全部图片；启用 JavaScript 后可离线查看图片并使用对照滑块。下方文字记录无需脚本即可阅读。</p></noscript>
+<div class="toolbar">
+  <div class="mode-buttons" role="group" aria-label="选择对照方式"><button type="button" data-mode="side" aria-pressed="true">并排对照</button><button type="button" data-mode="overlay" aria-pressed="false">叠加滑块</button></div>
+  <p>图片完整显示，不裁切、不加滤镜。并排模式下可点击查看原文件。</p>
+</div>
+<main>
+<section class="case" id="rhythm" aria-labelledby="rhythm-title">
+  <div class="case-head"><div><p class="case-id">01 / LOOP &amp; PULSE</p><h2 id="rhythm-title">节奏循环<span class="en-title">RHYTHM LOOP</span></h2><div class="palette" aria-label="参考配色：奶油白、近黑、橙红与暗蓝"><i class="swatch" style="background:#F3EDDA"></i><i class="swatch" style="background:#171a17"></i><i class="swatch" style="background:#d64a2f"></i><i class="swatch" style="background:#38565d"></i></div></div><p class="mechanism">上部字形由竖向脉冲与网点形成；中部 LOOP 转为嵌套的平行轮廓，BEAT 使用点阵，底部 RETURN 延续转弯线束。少量红、蓝线条穿过主体，连接不同文字层级。</p></div>
+  <div class="pair">
+    <figure><div class="frame"><a href="assets/references/01-rhythm-loop.webp"><img src="assets/references/01-rhythm-loop.webp" alt="原帖参考：奶油白底的 RHYTHM LOOP 海报，黑色脉冲字形、点阵和多重轮廓线" loading="lazy"></a></div><figcaption><strong>原帖参考</strong><span>Blue · WebP</span></figcaption></figure>
+    <figure><div class="frame"><a href="assets/outputs/01-rhythm-loop.png"><img src="assets/outputs/01-rhythm-loop.png" alt="本次生成的节奏循环复刻海报" loading="lazy"></a></div><figcaption><strong>本次复刻</strong><span>图像生成 · PNG</span></figcaption></figure>
+  </div>
+  <div class="overlay-view"><div class="overlay-stage"><img src="assets/references/01-rhythm-loop.webp" alt="节奏循环原帖参考" loading="lazy"><img class="generated" src="assets/outputs/01-rhythm-loop.png" alt="节奏循环生成结果" loading="lazy"><span class="divider" aria-hidden="true"></span></div><div class="overlay-labels"><span>左：本次复刻</span><span>右：原帖参考</span></div><label class="range-label">调整分界位置<input type="range" min="0" max="100" value="50" aria-label="节奏循环叠加分界位置"></label><p class="overlay-help">两图按完整画幅缩放对齐；这是视觉比对，不代表像素级配准。</p></div>
+  <p class="case-note">重点检查：四段文字的相对大小，LOOP 的双 O 内腔，以及轮廓线向网点过渡的连续性。</p>
+</section>
+<section class="case" id="spectral" aria-labelledby="spectral-title">
+  <div class="case-head"><div><p class="case-id">02 / SLICE &amp; FOLD</p><h2 id="spectral-title">光谱褶皱<span class="en-title">SPECTRAL FOLD</span></h2><div class="palette" aria-label="参考配色：灰粉、深海军蓝、米白与暗红"><i class="swatch" style="background:#DBA3A3"></i><i class="swatch" style="background:#101e35"></i><i class="swatch" style="background:#f1e4d5"></i><i class="swatch" style="background:#8f3739"></i></div></div><p class="mechanism">SPECTRAL 被斜向细线切过；SLICE 与 REFORM 采用横向切片。中央 FOLD 通过多重轮廓及折角构成主体，深蓝实块与米白间隙交替，暗红碎片维持节奏。</p></div>
+  <div class="pair">
+    <figure><div class="frame"><a href="assets/references/02-spectral-fold.webp"><img src="assets/references/02-spectral-fold.webp" alt="原帖参考：灰粉底的 SPECTRAL FOLD 海报，深蓝切片字形与嵌套折角" loading="lazy"></a></div><figcaption><strong>原帖参考</strong><span>Blue · WebP</span></figcaption></figure>
+    <figure><div class="frame"><a href="assets/outputs/02-spectral-fold.png"><img src="assets/outputs/02-spectral-fold.png" alt="本次生成的光谱褶皱复刻海报" loading="lazy"></a></div><figcaption><strong>本次复刻</strong><span>图像生成 · PNG</span></figcaption></figure>
+  </div>
+  <div class="overlay-view"><div class="overlay-stage"><img src="assets/references/02-spectral-fold.webp" alt="光谱褶皱原帖参考" loading="lazy"><img class="generated" src="assets/outputs/02-spectral-fold.png" alt="光谱褶皱生成结果" loading="lazy"><span class="divider" aria-hidden="true"></span></div><div class="overlay-labels"><span>左：本次复刻</span><span>右：原帖参考</span></div><label class="range-label">调整分界位置<input type="range" min="0" max="100" value="50" aria-label="光谱褶皱叠加分界位置"></label><p class="overlay-help">两图按完整画幅缩放对齐；这是视觉比对，不代表像素级配准。</p></div>
+  <p class="case-note">重点检查：斜线与横线的方向区分、FOLD 的折叠感，以及切片后文字是否仍然可读。</p>
+</section>
+<section class="case" id="urban" aria-labelledby="urban-title">
+  <div class="case-head"><div><p class="case-id">03 / GRID &amp; ECHO</p><h2 id="urban-title">都市回声<span class="en-title">URBAN ECHO</span></h2><div class="palette" aria-label="参考配色：深绿与奶油白"><i class="swatch" style="background:#033A2A"></i><i class="swatch" style="background:#f2f1d9"></i></div></div><p class="mechanism">URBAN 由大小变化的规则网点显现；ECHO 使用连续的平行轮廓，PUBLIC 转为竖向线束。下部 SPACE 融入横向波纹，整张依靠两色之间的密度与留白建立层次。</p></div>
+  <div class="pair">
+    <figure><div class="frame"><a href="assets/references/03-urban-echo.webp"><img src="assets/references/03-urban-echo.webp" alt="原帖参考：深绿底的 URBAN ECHO 海报，米白网点、轮廓字形与横向波纹" loading="lazy"></a></div><figcaption><strong>原帖参考</strong><span>Blue · WebP</span></figcaption></figure>
+    <figure><div class="frame"><a href="assets/outputs/03-urban-echo.png"><img src="assets/outputs/03-urban-echo.png" alt="本次生成的都市回声复刻海报" loading="lazy"></a></div><figcaption><strong>本次复刻</strong><span>图像生成 · PNG</span></figcaption></figure>
+  </div>
+  <div class="overlay-view"><div class="overlay-stage"><img src="assets/references/03-urban-echo.webp" alt="都市回声原帖参考" loading="lazy"><img class="generated" src="assets/outputs/03-urban-echo.png" alt="都市回声生成结果" loading="lazy"><span class="divider" aria-hidden="true"></span></div><div class="overlay-labels"><span>左：本次复刻</span><span>右：原帖参考</span></div><label class="range-label">调整分界位置<input type="range" min="0" max="100" value="50" aria-label="都市回声叠加分界位置"></label><p class="overlay-help">两图按完整画幅缩放对齐；这是视觉比对，不代表像素级配准。</p></div>
+  <p class="case-note">重点检查：网点是否保持行列秩序、ECHO 的内外轮廓关系，以及底部波纹是否保留 SPACE 的可辨认轮廓。</p>
+</section>
+<section class="case" id="wave" aria-labelledby="wave-title">
+  <div class="case-head"><div><p class="case-id">04 / FLOW &amp; MEMORY</p><h2 id="wave-title">波浪记忆<span class="en-title">WAVE MEMORY</span></h2><div class="palette" aria-label="参考配色：铁锈橙与奶油白"><i class="swatch" style="background:#943D1C"></i><i class="swatch" style="background:#f5e6c6"></i></div></div><p class="mechanism">米白线条在铁锈橙底上流动。WAVE 与 MEMORY 通过波纹的粗细和密度显形，TRACE 使用多层偏移轮廓，ARCHIVE 则在下部转成断续线与网点，沿斜向动势逐渐消散。</p></div>
+  <div class="pair">
+    <figure><div class="frame"><a href="assets/references/04-wave-memory.webp"><img src="assets/references/04-wave-memory.webp" alt="原帖参考：铁锈橙底的 WAVE MEMORY 海报，米白流动线条与斜向文字" loading="lazy"></a></div><figcaption><strong>原帖参考</strong><span>Blue · WebP</span></figcaption></figure>
+    <figure><div class="frame"><a href="assets/outputs/04-wave-memory.png"><img src="assets/outputs/04-wave-memory.png" alt="本次生成的波浪记忆复刻海报" loading="lazy"></a></div><figcaption><strong>本次复刻</strong><span>图像生成 · PNG</span></figcaption></figure>
+  </div>
+  <div class="overlay-view"><div class="overlay-stage"><img src="assets/references/04-wave-memory.webp" alt="波浪记忆原帖参考" loading="lazy"><img class="generated" src="assets/outputs/04-wave-memory.png" alt="波浪记忆生成结果" loading="lazy"><span class="divider" aria-hidden="true"></span></div><div class="overlay-labels"><span>左：本次复刻</span><span>右：原帖参考</span></div><label class="range-label">调整分界位置<input type="range" min="0" max="100" value="50" aria-label="波浪记忆叠加分界位置"></label><p class="overlay-help">两图按完整画幅缩放对齐；这是视觉比对，不代表像素级配准。</p></div>
+  <p class="case-note">重点检查：文字是否融入波场、线条由密到疏的方向，以及 TRACE 与 MEMORY 的前后层次。</p>
+</section>
+<section class="case experiment" id="text-only" aria-labelledby="text-only-title">
+  <div class="case-head"><div><p class="case-id">附加实验 / TEXT ONLY</p><h2 id="text-only-title">仅凭文字能复现多少<span class="en-title">TEXT-ONLY RECONSTRUCTION</span></h2></div><p class="mechanism">以「都市回声」为对象，比较带图参考与仅凭提示词的生成结果。这是独立追加的实验，不是原帖中的第五种设计。</p></div>
+  <div class="pair">
+    <figure><div class="frame"><a href="assets/outputs/03-urban-echo.png"><img src="assets/outputs/03-urban-echo.png" alt="对照结果：使用原帖图像参考生成的都市回声海报" loading="lazy"></a></div><figcaption><strong>带图参考结果</strong><span>本次生成 · 实验 03</span></figcaption></figure>
+    <figure><div class="frame"><a href="assets/outputs/05-urban-echo-text-only.png"><img src="assets/outputs/05-urban-echo-text-only.png" alt="附加实验：没有输入参考图、仅凭文字提示生成的都市回声海报" loading="lazy"></a></div><figcaption><strong>仅凭文字结果</strong><span>本次生成 · 附加实验</span></figcaption></figure>
+  </div>
+  <div class="overlay-view"><div class="overlay-stage"><img src="assets/outputs/03-urban-echo.png" alt="使用参考图的生成结果" loading="lazy"><img class="generated" src="assets/outputs/05-urban-echo-text-only.png" alt="仅凭文字的生成结果" loading="lazy"><span class="divider" aria-hidden="true"></span></div><div class="overlay-labels"><span>左：仅凭文字结果</span><span>右：带图参考结果</span></div><label class="range-label">调整分界位置<input type="range" min="0" max="100" value="50" aria-label="文字生成与带图生成的叠加分界位置"></label><p class="overlay-help">此处两张均为本次生成结果。完整画幅缩放对齐，不代表像素级配准。</p></div>
+  <p class="experiment-observation">仅凭文字的结果保留了 URBAN 点阵、ECHO 轮廓、PUBLIC 竖线、SPACE 波纹与深绿双色体系；但 ECHO 更大，分区更规整，页脚未保留原参考的左侧空栏。它重现了主要视觉机制，<strong>不能称为构图的精确复现</strong>。</p>
+  <p class="experiment-observation"><strong>单次生成观察，不代表统计成功率。</strong>具体输入条件与完整提示词见<a href="#records">实验记录</a>。</p>
+</section>
+<section class="records" id="records"><h2>2026-11-10：四张字体构图海报复刻实测</h2>
+<h3>目录</h3>
+<ol><li>任务与证据范围</li><li>实际执行</li><li>四张带图复刻的验收</li><li>无参考图对照</li><li>有证据的经验与局限</li><li>可复用的后续记录格式</li></ol>
+<h3>1. 任务与证据范围</h3>
+<p>读取 Blue 发布的四张海报，使用 ChatGPT 内置图像创建分别复刻，并补做一张仅文字输入的对照。四张原图及五张原始生成结果均保留。没有取得作者的字体、矢量路径、工程、提示词或生成日志。</p>
+<p>这是基于实际图片的视觉研究。下面的“保留”“变化”是本次目视对照及文件检查的结果；没有测得相似度百分数，没有进行实体打样或路径级验证。原帖中的模型称呼不作为本次工具的身份依据。</p>
+<h3>2. 实际执行</h3>
+<div class="table-scroll"><table><tr><th>运行</th><th>输入方式</th><th>主要任务</th><th>结果文件</th></tr><tr><td>01</td><td>对应原图 + 文字规范</td><td>节奏循环</td><td><code>assets/outputs/01-rhythm-loop.png</code></td></tr><tr><td>02</td><td>对应原图 + 文字规范</td><td>光谱褶皱</td><td><code>assets/outputs/02-spectral-fold.png</code></td></tr><tr><td>03</td><td>对应原图 + 文字规范</td><td>都市回声</td><td><code>assets/outputs/03-urban-echo.png</code></td></tr><tr><td>04</td><td>对应原图 + 文字规范</td><td>波浪记忆</td><td><code>assets/outputs/04-wave-memory.png</code></td></tr><tr><td>05</td><td>仅文字规范，无图像输入</td><td>都市回声对照</td><td><code>assets/outputs/05-urban-echo-text-only.png</code></td></tr></table></div>
+<p>每个运行只生成一次，没有事后修图、插值放大或再次生成。四张参考与五张输出的实际尺寸全部为 <strong>941×1672 px</strong>。输出为 PNG、RGB；主图要求约9:16，未传递单独的 size 参数。提示词里的“最高可用原生分辨率”并未得到更大的像素尺寸。</p>
+<p>完整原文见五个 <code>prompt-*.txt</code>；调用记录见 <a href="#run-record">generation-record.json</a>；图片尺寸、字节数及校验值见 <a href="#file-data">asset-manifest.json</a>。这些记录中的路径已转换为技能内的相对路径，原始文案未事后改写。</p>
+<p>运行05使用运行03的文字规范，移除了依赖参考图的措辞，且不传任何图片。没有固定随机种子或重复多次，因此它是一次实际对照，不是严格控制全部变量的消融实验。</p>
+<h3>3. 四张带图复刻的验收</h3>
+<div class="table-scroll"><table><tr><th>海报</th><th>本轮保留</th><th>本轮可见差异</th><th>需重点查看的位置</th></tr><tr><td>节奏循环</td><td>RHYTHM脉冲、LOOP回路、BEAT点阵、RETURN折返；两处O内孔；三栏页脚</td><td>底色更亮暖，红色更鲜艳，蓝线更深；端点和轮廓更锐利</td><td>两个O交界、P下伸路线、RETURN密集折角</td></tr><tr><td>光谱褶皱</td><td>斜切、横切、中心折面三种方向；四组大字与三栏信息区</td><td>灰粉略向暖桃粉移动；墨色对比和细线锐度增加</td><td>FOLD折面转向、O与D内孔、切片相接</td></tr><tr><td>都市回声</td><td>网点URBAN、轮廓ECHO、竖线PUBLIC、波线SPACE；页脚左侧空栏</td><td>绿底略深，浅色更暖亮；部分波线更平滑，背景有轻微深浅起伏</td><td>ECHO右下与下垂竖线相交、PUBLIC接波线处</td></tr><tr><td>波浪记忆</td><td>连续波场、细轮廓TRACE、粗波线MEMORY、点短线ARCHIVE；斜向大趋势</td><td>锈色更饱和，浅色更明亮，纸面细颗粒更显眼</td><td>TRACE的R/A交汇、MEMORY波谷、ARCHIVE尾部</td></tr></table></div>
+<p>逐项查看了主字、顶部小字及页脚：未发现明显新增的漏字、拼写或日期错误。这里的“未发现”是目视检查结论，不等于严格字体与字距测量。光谱褶皱顶部为 SPECTRUM，而主视觉为 SPECTRAL；参考图本身如此，不能擅自统一。</p>
+<p>没有发现破坏大字识别的明显新增大面积粘连。密集交汇处仍存在局部线距不均、相碰或断续；参考自身也包含复杂交叠，不能把所有交叠都算作生成新增缺陷。</p>
+<h4>固定区域的背景采样</h4>
+<p>在每张原参考和输出的同一空白页脚区域 <code>x=420..519, y=1560..1584</code> 取 RGB 中位数：</p>
+<div class="table-scroll"><table><tr><th>海报</th><th>原参考</th><th>生成结果</th></tr><tr><td>节奏循环</td><td>#F3EDDA</td><td>#F8EFD8</td></tr><tr><td>光谱褶皱</td><td>#DBA2A3</td><td>#DFA2A0</td></tr><tr><td>都市回声</td><td>#033A2A</td><td>#013824</td></tr><tr><td>波浪记忆</td><td>#943D1C</td><td>#923611</td></tr></table></div>
+<p>这是单个区域的屏幕像素采样，足以说明颜色并未完全锁住；它不是整图色差、色彩管理结果或可直接用于印刷的标定色值。完整数据见 <a href="#color-data">background-samples.json</a>。</p>
+<h3>4. 无参考图对照</h3>
+<p>运行05保留了四类机制：点径调制形成 URBAN、嵌套轮廓形成 ECHO、竖向尖线形成 PUBLIC、水平波线形成 SPACE；深绿与奶油色关系也仍存在。</p>
+<p>具体变化很明显：</p>
+<ul><li>ECHO更高、更大，在中部占据更强主导。</li><li>字与字之间更规整，原图中细线、网点的复杂接续关系被简化。</li><li>上方说明行字号更大，信息区层级重新分配。</li><li>页脚向左扩展，原参考中特意保留的左侧空栏消失。</li><li>底部SPACE被压入更规则的波纹带，波线节奏更平均。</li></ul>
+<p>因此，这次文字规范能在一次调用中传达设计机制；它不能据此证明特定原图布局可在无图输入下稳定复现。选择有图还是无图，应根据“靠近某张原图”还是“迁移这套机制”的目标决定。</p>
+<h3>5. 有证据的经验与局限</h3>
+<h4>把风格要求拆成可观察的构成动作</h4>
+<p>本次提示词逐词指定“点径调制、平行轮廓、切片转向、波线增粗”，五张输出都出现了相应结构。这比只写“实验感、复古、声音海报”更容易检查是否完成。</p>
+<p>本次没有运行一个只有风格词的基线，不能把该判断写成已量化验证的优劣结论。可将它作为从结果中形成、值得复用的工作方法。</p>
+<h4>区分结构字与信息字</h4>
+<p>主体可以形变，小字需要平直、准确。此次完整列出页脚文案并单独约束其排版后，五张结果没有看到明显新增漏字；但没有统计可靠性测试，下次仍须逐词校对。</p>
+<h4>参考图提供构图约束，仍会重绘局部细节</h4>
+<p>四张带图结果的位置与层级接近参考，然而颜色、纸感、端点和细线路径都发生了变化。不能把“看起来接近”扩大为“像素无损”或“恢复了原始路径”。</p>
+<h4>无图结果适合检查机制理解</h4>
+<p>运行05说明文字规范可以产生同类机制，并同时揭示构图自由度。若目标是换主题，可以利用这种自由；若目标是保留字位和空栏，需要更明确的比例约束或参考输入。</p>
+<h4>修订应由具体偏差驱动</h4>
+<p>若继续修节奏循环，可针对“红色过艳、蓝色过深”写局部修订，并重申大字、线条与页脚不变。若修都市回声的无图版，重点是ECHO占幅与页脚左侧空栏。</p>
+<p>这些修订尚未执行；它们是下一步建议，不是已经证实有效的修复结果。</p>
+<h4>位图不等于可编辑工程</h4>
+<p>所有输出都是RGB PNG，并非字体文件、AI工程或可编辑SVG。细线的干净程度不能证明路径正确；原始像素数也没有提升。需要工程交付时应单独实施 <a href="#vector-plan">确定性重构方法</a>。</p>
+<h3>6. 可复用的后续记录格式</h3>
+<p>每次记录：来源与访问日期、任务模式、参考图角色、完整实际提示词、已显式设置参数、结果文件与尺寸、可见差异、下一轮只修什么、哪些项目仍未验证。</p>
+<p>不要把提示词“改写得更像成功原因”；保留真实调用原文。不要补写工具没有提供的模型版本、种子或相似度。将新主题的活动内容与本案例的示例文案分开。</p></section><section class="records" id="reference-analysis"><h2>四张字体构图海报：参考拆解</h2>
+<h3>来源与证据范围</h3>
+<ul><li>原帖：<a href="https://www.xiaohongshu.com/explore/6af2c6c1000000001b01f805">小红书帖子</a>，页面显示作者为 <strong>Blue</strong>。</li><li>访问日期：2026-11-10。</li><li>本文依据取得的四张参考图进行视觉观察。原帖提及的模型名称只是发布者的说法；没有作者提示词、生成日志或原始设计工程，不能据此确认其工具与参数。</li><li>英文标题、日期、地点等文字属于海报画面，不代表已核实的真实活动信息。</li></ul>
+<div class="table-scroll"><table><tr><th>作品</th><th>本地参考</th><th>主体文字顺序</th><th>主要色彩关系</th></tr><tr><td>节奏循环</td><td><a href="assets/references/01-rhythm-loop.webp">参考图</a></td><td>RHYTHM → LOOP → BEAT → RETURN</td><td>暖米白底、近黑主体，少量朱红与灰蓝</td></tr><tr><td>光谱褶皱</td><td><a href="assets/references/02-spectral-fold.webp">参考图</a></td><td>SPECTRAL → SLICE → FOLD → REFORM</td><td>灰粉底、深海军蓝主体，米白与暗红穿插</td></tr><tr><td>都市回声</td><td><a href="assets/references/03-urban-echo.webp">参考图</a></td><td>URBAN → ECHO → PUBLIC → SPACE</td><td>深墨绿底、浅奶油色图文，基本为双色</td></tr><tr><td>波浪记忆</td><td><a href="assets/references/04-wave-memory.webp">参考图</a></td><td>WAVE → TRACE → MEMORY → ARCHIVE</td><td>赭红底、浅奶油色图文，基本为双色</td></tr></table></div>
+<p>以上颜色是视觉描述，尚未经过印刷色值标定。</p>
+<h3>共同的版式规则</h3>
+<p>四张都是细长竖幅，字形本身承担主体图像。上方小字先交代主题，中上部的大字与线条占据主要面积，下方用细分隔线和较平静的信息区收束。不同效果之间有连续的线条或网点过渡，因此读起来是一幅整体构图，而不是几个互不相关的字效样品。</p>
+<p>背景保持干净。细微纸感可以存在，但主要的明暗、密度与空间感来自线条宽度、间距、重复和偏移，不需要额外光晕。</p>
+<h3>01 节奏循环</h3>
+<p>顶部字形由密集竖向细线组成，线条在笔画内部增粗，向外收尖、断开并过渡为点。中间最大的圆角回路字采用多层平行轮廓，黑线与底色交替，局部加入红、蓝线和箭头。较小的点阵字嵌在其下方，再连接至横向展开的底部大字。</p>
+<p>复刻重点是三种表达的连续转换：竖线、绕行轮廓、网点。圆角回路必须保留足够的内部空隙，不能让密线粘成实心块。红蓝只起导航作用，扩大它们的面积会改变原稿的视觉重心。</p>
+<h3>02 光谱褶皱</h3>
+<p>上部大字宽厚、略带斜向动势，并被方向一致的细斜线切穿；中部短字改用水平切片。中心最大的字组出现明显折面：相邻段落的线束改变走向，外轮廓重复偏移，形成折叠厚度。下方字组再次回到横切片，与底部信息区衔接。</p>
+<p>复刻时需要分别保留斜切、横切、折面三种组织方式。若把所有区域都处理成同一组平行线，虽然配色相似，褶皱结构仍会丢失。暗红小块是少量错位残影，不能变成随机故障噪声。</p>
+<h3>03 都市回声</h3>
+<p>最上方的大字由规则网格中的圆点构成，点径随位置变化，字外留有稀疏颗粒。中部的大字采用多层轮廓，直角、圆角并存；其下较小的竖线字作为过渡。底部大字由连续起伏的水平线组成，沿字形改变粗细与密度。</p>
+<p>这一张依靠点、轮廓和波线的层级差异获得丰富度。整体低彩度、强对比；新增多种颜色会削弱原稿。轮廓字内部应保留清楚的负形，点阵列距也应基本稳定。</p>
+<h3>04 波浪记忆</h3>
+<p>多组细线沿同一大方向流动，上部与中部的大字通过波线的局部增粗显现。中间的细轮廓字较轻，带有重复偏移与下垂连线。右下角的小一号大写字逐渐碎成点，形成斜向消散的尾部。</p>
+<p>复刻重点是波线共同变形，而不仅是把波浪纹理放在文字背后。各行需要有方向上的联系，同时保持字腔和识别度。细线不能平均铺满整张画面；原稿仍有用于呼吸的底色区域。</p>
+<h3>比对时的优先级</h3>
+<p>依次核对文字顺序与拼写、各层面积比例、字形内部负空间、线点转换方式、配色比例，最后才看纸感与细节。第一轮能说明结构是否成立；局部精修应针对具体偏差，不应顺带重排整张海报。</p></section><section class="records" id="vector-plan"><h2>复刻方法与记录原则</h2>
+<p>本文提供由参考图推导的工作方法。图像创建的实际提示词、调用次数、输出尺寸与检查结果应以档案中的运行记录为准。下文的矢量步骤尚未实施，不代表已经交付可编辑的字体工程。</p>
+<h3>图像创建的组织方式</h3>
+<p>每张海报使用一张对应参考图，分别生成。提示词先锁定竖幅、主体文字的排列、背景色和底部信息区，再说明该张特有的线条机制。一次生成四联拼图会压缩每张海报的细线与小字空间，也不利于逐张追踪问题。</p>
+<p>提示词需要区分三个层面：</p>
+<ol><li><strong>内容约束</strong>：指定字词、顺序、信息区与留白。需要保留的正文应逐字列明。</li><li><strong>构成约束</strong>：说明字形是由线条、轮廓或网点形成，并描述各部分如何连接。</li><li><strong>排除项</strong>：禁止新增人物、产品模型、发光、装饰图标或无关背景，以免改变参考的构成。</li></ol>
+<p>“复古、实验、高级、声波”这类风格词不能替代构成描述。以节奏循环为例，更有效的约束是圆角多重轮廓、线条在转弯处保持平行、笔画之间留出底色缝隙，以及少量强调色沿回路穿行。</p>
+<h3>如何检查与迭代</h3>
+<p>先缩小看版式重心，再按实际像素检查文字与细线。对照参考记录具体差异，例如某一层占比过大、折面变成圆弧、点径随机、字腔闭合或正文漏字。不要用一个没有测量依据的“相似度百分比”替代观察。</p>
+<p>修改时每轮聚焦一个主要问题，并重复要求保持其余结构。结果记录应写清“要求发生的变化”和“实际发生的变化”；保留未修好的问题。图像看起来有矢量质感，不等于它真的具备可编辑路径。</p>
+<h3>确定性矢量重构建议</h3>
+<p>以下是可另行实施的工程路线，不是对原作者工作方式的断言。</p>
+<h4>先建立可读的字形骨架</h4>
+<p>用明确许可的字体或自行绘制字形，确定宽度、行高与字距，再转为路径。保留一份未变形文字作为校对基准。先使纯色字形的版式成立，再叠加效果，避免依靠噪声掩盖字形问题。</p>
+<h4>分别构建四类结构</h4>
+<div class="table-scroll"><table><tr><th>效果</th><th>可采用的几何方法</th><th>需要保留的控制量</th></tr><tr><td>节奏循环</td><td>对圆角字形做多次等距轮廓；用竖向采样线与字形交集生成粗细变化；在尾部逐渐改为点</td><td>轮廓数量、间距、圆角、尾部长度、强调色占比</td></tr><tr><td>光谱褶皱</td><td>将文字分为横向或斜向条带；让相邻折面使用不同的仿射变换；统一连接折线</td><td>切片间距、折面角度、接缝位置、偏移量</td></tr><tr><td>都市回声</td><td>在规则网格采样字形覆盖范围并控制点径；中层使用等距轮廓；下层使用受字形调制的波线</td><td>网格间距、最大点径、线宽、波幅、负形宽度</td></tr><tr><td>波浪记忆</td><td>先建立连续波线场，再用字形遮罩调制局部线宽；轮廓层重复偏移；尾部渐变为点</td><td>波长、相位、线宽范围、偏移方向、衰减范围</td></tr></table></div>
+<p>不能简单把整幅参考做自动描摹后称为“原始工程”。自动描摹得到的是对栅格边缘的拟合；线条数量、圆角与字腔仍需检查，文字内容也应独立校对。</p>
+<h4>最后恢复信息区</h4>
+<p>小字、日期、分栏细线和底部页脚单独排版，用固定网格控制基线和边距。正文应保持常规可读字形，不跟随主视觉变形。这样后续替换日期或场地时，不必重新生成主体图像。</p>
+<h3>档案应保留什么</h3>
+<p>保留来源链接、原始参考、实际提交的完整提示词、原始输出、每轮修改说明和已知差异。尺寸、文件格式与校验值可以由文件读取获得；未提供的随机种子或模型版本应记为“未暴露”，不能补写成确定参数。</p>
+<p>交付栅格结果时，如实标注其分辨率。需要实体印刷时，再依据成品尺寸核算有效像素密度，并通过实际打样检查密线、网点和底色；仅写入较高的 DPI 元数据不会增加细节。</p></section><section class="records" id="prompts"><h2>五次实际提交的完整提示词</h2><p>以下为本次实际使用的原文，未事后改写。第五次不含参考图输入。</p><details><summary>01-rhythm-loop</summary><pre>Use case: stylized-concept.
+Create ONE finished flat portrait typographic exhibition poster, exact 9:16 aspect ratio, at the highest available native resolution. The supplied image is the visual reference for this reconstruction study. Closely reconstruct its composition, typography-as-image mechanisms, palette and visual density. This is a single full-bleed artwork, not a mockup, screenshot, framed print or comparison sheet.
+
+Palette: warm ivory paper approximately #F3EDDA, deep near-black ink, very sparing vermilion and muted blue-gray line accents. Subtle even paper texture only.
+Composition: oversized stacked word structures occupy the upper 80 percent of the poster, with a clean precisely typeset three-column footer below. Preserve the asymmetric upper-right small label. Letters are the illustration itself, not plain solid letters with decorative lines placed over them.
+Top third: the exact word &quot;RHYTHM&quot; is constructed from dense vertical tapered black pulses, needles and aligned dot trains, with variable lengths revealing tall condensed capital letters. Fine red pulse endpoints appear sparingly.
+Center: the exact word &quot;LOOP&quot; is huge and built from approximately 9 to 14 nested parallel rounded racetrack contour lines. Its two O counters remain distinct and open; the L and P remain readable. Lines route fluidly around corners and join neighboring structures, with tiny directional arrows and only a few red and blue-gray tracks.
+Below: the exact word &quot;BEAT&quot; is made of crisp aligned round dots on a regular grid. Some dots dissolve into short horizontal rhythm marks.
+Lower main field: the exact word &quot;RETURN&quot; spans the width as nested rounded rectilinear parallel paths, cropped only as in the reference. Preserve the generous scale and the clear letter counters.
+Carefully control the transitions between needle, line and dot modes. Lines should be confidently drawn, crisp, evenly spaced and visibly separate, not fuzzy, tangled, wobbly scribbles, embossed metal, a wire bundle or an arbitrary waveform.
+
+Typeset the following secondary text neatly and verbatim, matching the reference hierarchy:
+Upper right: &quot;RHYTHM / PULSE / LOOP&quot;; &quot;Experimental Rhythm Program&quot;.
+Footer left: &quot;RHYTHM&quot; on one line and &quot;LOOP&quot; below; &quot;Every rhythm begins&quot; and &quot;by returning.&quot;
+Footer middle: &quot;Pulse Study&quot;; &quot;Loop Performance&quot;; &quot;Rhythmic Sequence&quot;.
+Footer right: &quot;2026.12.05&quot;; &quot;20:00 — 22:00&quot;; &quot;Performance Hall / Studio E&quot;.
+Bottom: &quot;Winter Program 2026&quot;.
+Use thin vertical separators between footer columns, short small rules, and a long quiet bottom rule. Keep this small text flat, undistorted and readable.
+No added graphics, no logo, no watermark, no platform UI, no glow, no gradients, no drop shadows, no extra words. Keep the full poster edge to edge.
+</pre></details><details><summary>02-spectral-fold</summary><pre>Use case: stylized-concept.
+Create ONE finished flat portrait typographic exhibition poster, exact 9:16 aspect ratio, at the highest available native resolution. The supplied poster is the visual reference for a close reconstruction study. Preserve its four stacked word levels, structural line logic, palette, relative scale and bottom editorial information grid. Produce only the full-bleed artwork; no frame, room, mockup, device or comparison sheet.
+
+Palette: dusty muted rose background approximately #DBA3A3, extremely dark navy lettering, warm pale cream fine lines, sparse dark brick-red slice accents. Slight uniform paper grain.
+The actual type forms the entire graphic image. Do not place ordinary intact type on top of unrelated stripe decoration.
+Top field: the exact word &quot;SPECTRAL&quot; in enormous tall condensed dark navy capitals, sliced by diagonal parallel cream gaps. The word follows the same descending diagonal architecture and spatial stepped cuts as the reference, with subtle vertical trails at the lower edges.
+Next narrow band: the exact word &quot;SLICE&quot; cut into horizontal strips, some displaced laterally. Its letters remain clearly legible, with navy, cream and a few burgundy short strip fragments.
+Dominant middle: the exact word &quot;FOLD&quot; constructed as deeply layered parallel outline-letter contours folded across two clear angular planes. This is graphic dimensionality created by contour offsets and sharply changing line direction, not a glossy 3D extruded object. Keep all four letters F O L D readable, especially the O counter and the L separation. Large contour lines bend around the O and D while straight edges kink into convincing crease geometry.
+Lower graphic band: the exact word &quot;REFORM&quot; made of aligned horizontal slice strips, with controlled displaced bars and a sparse dot or square sampling grid. Preserve strong word structure and abundant visual density.
+Keep different mechanisms distinct: diagonal slices for SPECTRAL, lateral strips for SLICE and REFORM, folded parallel contours for FOLD. No rainbow colors, lens flare, glow, metallic surfaces, blurred moire or random zigzags.
+
+Text, verbatim:
+Upper right: &quot;SPECTRUM / SLICE / FOLD&quot;; &quot;Audiovisual Installation Program&quot;.
+Footer left: &quot;SPECTRAL&quot; and below &quot;FOLD&quot;; &quot;A signal changes when&quot; and &quot;its structure is rearranged.&quot;
+Footer middle: &quot;Spectrum Study&quot;; &quot;Spatial Division&quot;; &quot;Reconstruction Session&quot;.
+Footer right: &quot;2026.12.12&quot;; &quot;18:00 — 21:00&quot;; &quot;Projection Hall / Gallery F&quot;.
+Bottom: &quot;Winter Program 2026&quot;.
+Use the reference&#x27;s thin horizontal line above the footer, quiet vertical column separators, short baseline rules and clean dark navy sans-serif small typography. Footer text is flat and undistorted.
+No watermark, no added logos, no added words, no border, no caption outside the artwork. The supplied reference defines the composition.
+</pre></details><details><summary>03-urban-echo</summary><pre>Use case: stylized-concept.
+Generate ONE complete flat portrait typographic exhibition poster in an exact 9:16 aspect ratio, highest available native resolution. Use the supplied poster as the direct visual reference for a close reconstruction of its structure, letterforms, scale, color and layout. Deliver only the full-bleed poster, not an object, photograph, screenshot or sheet of variations.
+
+Two-color screen-print feeling: deep dark forest-green background approximately #033A2A and warm pale ivory ink. Keep the background calm, with just very subtle uniform paper texture. No additional colors.
+Stack four distinct typography mechanisms into one connected architectural graphic spanning the upper 77 percent:
+1. &quot;URBAN&quot; across the top, very large condensed capitals formed exclusively by a strict regular grid of round ivory halftone dots, with dot sizes growing inside the letters and reducing into the surrounding field. The U R B A N remain readable. The top contours subtly suggest a city skyline without drawing buildings.
+2. &quot;ECHO&quot; in the center, monumental tall capitals formed from many fine evenly spaced nested ivory contour lines. E and H have disciplined rectilinear corners; C and O have rounded corners. Keep counters, apertures and the four-letter separation clear. The parallel lines create a planar architectural map, not 3D tubes.
+3. &quot;PUBLIC&quot;, smaller and right aligned beneath the ECHO field, assembled from thin tapered vertical pulses and narrow stripe thickness modulation, not ordinary solid type.
+4. &quot;SPACE&quot; large across the lower graphic field, revealed by continuous horizontal undulating ivory lines whose density and thickness encode the letters. These lines travel through and around the letters, maintaining coherent flowing bands and clear negative-space counters.
+Let some vertical line trails connect the fields. Preserve the tightly packed but coherent transitions and precise dot spacing of the reference. Every line and dot should look intentional and crisp.
+
+Text, verbatim:
+Upper left: &quot;CITY / SOUND / PUBLIC&quot;; &quot;Exhibition on Sound and Urban Space&quot;; thin long horizontal rule to the right.
+Below the main graphic, thin full-width horizontal separator.
+Footer central-left: &quot;URBAN ECHO&quot;; &quot;Sound changes when a city listens back.&quot;; a short rule; then &quot;Public Listening&quot;; &quot;Acoustic Mapping&quot;; &quot;Spatial Archive&quot;.
+Footer right: &quot;2026.11.08—11.29&quot;; &quot;10:00—18:00&quot;; a short rule; &quot;South Block / Gallery Hall&quot;.
+Bottom: &quot;Autumn Program 2026&quot; with a long thin rule to the right.
+Retain the original asymmetric footer with a narrow left margin column and two thin vertical dividing rules. Small text is clean undistorted sans-serif and readable, unlike the structural lettering above.
+Avoid glow, neon, chrome, gradients, fake LED lights, illustrated skyscrapers, grainy speckle noise, rounded card UI or random decorative symbols. No logo, watermark or added words.
+</pre></details><details><summary>04-wave-memory</summary><pre>Use case: stylized-concept.
+Create ONE full-bleed flat portrait typographic sound-art exhibition poster at exact 9:16 aspect ratio and highest available native resolution. Closely reconstruct the supplied reference&#x27;s flowing typographic composition, structural mechanisms, terracotta palette, relative word scale, motion and footer grid. It is a flat printed graphic, not a photographed sheet or mockup.
+
+Palette: rich matte burnt terracotta background approximately #943D1C with pale warm ivory linework and type, strictly two colors. Very subtle uniform paper texture. Avoid orange glow and metallic gold.
+The main graphic is a continuous field of fine ivory wave-like paths flowing diagonally down from upper left, then bending rhythmically through three major typography levels:
+Top: exact word &quot;WAVE&quot;, huge, reconstructed through variable-width parallel undulating lines. Letter strokes emerge from accumulated thickened segments of the same continuous lines. Readable W A V E, not plain block text with stripes overlaid. At edges, the lines break gradually into aligned dots.
+Middle: exact word &quot;TRACE&quot;, thinner and smaller, descending diagonally through the center; made from multiple delicate offset outline contours like a transparent wireframe echo. Keep a clear hierarchy from the much bolder WAVE and MEMORY. Its repeated contours may shift but do not become a filled solid word.
+Main lower-middle: exact word &quot;MEMORY&quot;, very large, made of thick-and-thin horizontal wave paths bending strongly around the letter strokes, with smooth troughs and peaks. Every letter remains readable and the O and R counters stay open. Keep the long continuous line flow, not independent detached ribbon letters.
+Lower-right graphic field: exact word &quot;ARCHIVE&quot;, formed from short horizontal dashes and orderly dot grids, dissolving into a swept field. Keep controlled rhythm, not random particles.
+Preserve the original diagonal tension, the calm empty lower-left transition area, long vertical drips ending in tiny dots, and a few subtle orthogonal line fragments. Avoid excessive additional geometry.
+
+Typeset these small labels verbatim, clean and undistorted:
+Upper right: &quot;WAVE / TRACE / MEMORY&quot;; &quot;Sound Installation Program&quot;.
+Footer left: &quot;WAVE&quot; then &quot;MEMORY&quot;; &quot;Every sound leaves&quot; and &quot;a structure behind.&quot;
+Footer middle: &quot;Listening Archive&quot;; &quot;Residual Tone&quot;; &quot;Spatial Drift&quot;.
+Footer right: &quot;2026.11.14&quot;; &quot;18:30 — 20:30&quot;; &quot;West Hall / Black Room&quot;.
+Bottom: &quot;Autumn Program 2026&quot;.
+Keep the three-column footer, thin vertical separators, short rules and the final long horizontal line. A generous readable information zone occupies the bottom 18 percent.
+No glow, gradients, shadow, chrome, raised embossing, 3D ribbon, plain background wave with unrelated solid text, added illustrations, logo, watermark or extra words. Maintain crisp fine line separations and the reference&#x27;s visual hierarchy.
+</pre></details><details><summary>05-urban-echo-text-only</summary><pre>Use case: stylized-concept.
+Generate ONE complete flat portrait typographic exhibition poster in an exact 9:16 aspect ratio, highest available native resolution. No reference image is provided. Construct the poster from the following written design specification alone. Deliver only the full-bleed poster, not an object, photograph, screenshot or sheet of variations.
+
+Two-color screen-print feeling: deep dark forest-green background approximately #033A2A and warm pale ivory ink. Keep the background calm, with just very subtle uniform paper texture. No additional colors.
+Stack four distinct typography mechanisms into one connected architectural graphic spanning the upper 77 percent:
+1. &quot;URBAN&quot; across the top, very large condensed capitals formed exclusively by a strict regular grid of round ivory halftone dots, with dot sizes growing inside the letters and reducing into the surrounding field. The U R B A N remain readable. The top contours subtly suggest a city skyline without drawing buildings.
+2. &quot;ECHO&quot; in the center, monumental tall capitals formed from many fine evenly spaced nested ivory contour lines. E and H have disciplined rectilinear corners; C and O have rounded corners. Keep counters, apertures and the four-letter separation clear. The parallel lines create a planar architectural map, not 3D tubes.
+3. &quot;PUBLIC&quot;, smaller and right aligned beneath the ECHO field, assembled from thin tapered vertical pulses and narrow stripe thickness modulation, not ordinary solid type.
+4. &quot;SPACE&quot; large across the lower graphic field, revealed by continuous horizontal undulating ivory lines whose density and thickness encode the letters. These lines travel through and around the letters, maintaining coherent flowing bands and clear negative-space counters.
+Let some vertical line trails connect the fields. Preserve the tightly packed but coherent transitions and precise dot spacing described here. Every line and dot should look intentional and crisp.
+
+Text, verbatim:
+Upper left: &quot;CITY / SOUND / PUBLIC&quot;; &quot;Exhibition on Sound and Urban Space&quot;; thin long horizontal rule to the right.
+Below the main graphic, thin full-width horizontal separator.
+Footer central-left: &quot;URBAN ECHO&quot;; &quot;Sound changes when a city listens back.&quot;; a short rule; then &quot;Public Listening&quot;; &quot;Acoustic Mapping&quot;; &quot;Spatial Archive&quot;.
+Footer right: &quot;2026.11.08—11.29&quot;; &quot;10:00—18:00&quot;; a short rule; &quot;South Block / Gallery Hall&quot;.
+Bottom: &quot;Autumn Program 2026&quot; with a long thin rule to the right.
+Use an asymmetric footer with a narrow left margin column and two thin vertical dividing rules. Small text is clean undistorted sans-serif and readable, unlike the structural lettering above.
+Avoid glow, neon, chrome, gradients, fake LED lights, illustrated skyscrapers, grainy speckle noise, rounded card UI or random decorative symbols. No logo, watermark or added words.
+</pre></details></section><section class="records"><h2>可核查数据</h2><details id="run-record"><summary>调用记录</summary><pre>{
+  &quot;created_on&quot;: &quot;2026-11-10&quot;,
+  &quot;timezone&quot;: &quot;Asia/Shanghai&quot;,
+  &quot;generation_method&quot;: &quot;ChatGPT built-in image creation&quot;,
+  &quot;exact_model_version&quot;: null,
+  &quot;exact_model_version_note&quot;: &quot;Not exposed by the tool. Original post&#x27;s Images 2.5 label was not independently verified.&quot;,
+  &quot;source_note&quot;: &quot;https://www.xiaohongshu.com/explore/6af2c6c1000000001b01f805&quot;,
+  &quot;runs&quot;: [
+    {
+      &quot;id&quot;: &quot;01-rhythm-loop&quot;,
+      &quot;title&quot;: &quot;节奏循环&quot;,
+      &quot;started&quot;: &quot;2026-11-10T07:59:23.790Z&quot;,
+      &quot;finished&quot;: &quot;2026-11-10T08:00:54.558Z&quot;,
+      &quot;success&quot;: true,
+      &quot;mode&quot;: &quot;reference-guided&quot;,
+      &quot;prompt_file&quot;: &quot;references/prompt-01-rhythm-loop.txt&quot;,
+      &quot;reference_images&quot;: [
+        &quot;assets/references/01-rhythm-loop.webp&quot;
+      ],
+      &quot;parameters_explicitly_set&quot;: {
+        &quot;transparent_background&quot;: false
+      },
+      &quot;size_setting&quot;: &quot;9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed&quot;,
+      &quot;seed_setting&quot;: &quot;not provided&quot;,
+      &quot;output_file&quot;: &quot;assets/outputs/01-rhythm-loop.png&quot;,
+      &quot;iterations&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;02-spectral-fold&quot;,
+      &quot;title&quot;: &quot;光谱褶皱&quot;,
+      &quot;started&quot;: &quot;2026-11-10T07:59:23.791Z&quot;,
+      &quot;finished&quot;: &quot;2026-11-10T08:00:06.444Z&quot;,
+      &quot;success&quot;: true,
+      &quot;mode&quot;: &quot;reference-guided&quot;,
+      &quot;prompt_file&quot;: &quot;references/prompt-02-spectral-fold.txt&quot;,
+      &quot;reference_images&quot;: [
+        &quot;assets/references/02-spectral-fold.webp&quot;
+      ],
+      &quot;parameters_explicitly_set&quot;: {
+        &quot;transparent_background&quot;: false
+      },
+      &quot;size_setting&quot;: &quot;9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed&quot;,
+      &quot;seed_setting&quot;: &quot;not provided&quot;,
+      &quot;output_file&quot;: &quot;assets/outputs/02-spectral-fold.png&quot;,
+      &quot;iterations&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;03-urban-echo&quot;,
+      &quot;title&quot;: &quot;都市回声&quot;,
+      &quot;started&quot;: &quot;2026-11-10T07:59:23.791Z&quot;,
+      &quot;finished&quot;: &quot;2026-11-10T08:02:30.223Z&quot;,
+      &quot;success&quot;: true,
+      &quot;mode&quot;: &quot;reference-guided&quot;,
+      &quot;prompt_file&quot;: &quot;references/prompt-03-urban-echo.txt&quot;,
+      &quot;reference_images&quot;: [
+        &quot;assets/references/03-urban-echo.webp&quot;
+      ],
+      &quot;parameters_explicitly_set&quot;: {
+        &quot;transparent_background&quot;: false
+      },
+      &quot;size_setting&quot;: &quot;9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed&quot;,
+      &quot;seed_setting&quot;: &quot;not provided&quot;,
+      &quot;output_file&quot;: &quot;assets/outputs/03-urban-echo.png&quot;,
+      &quot;iterations&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;04-wave-memory&quot;,
+      &quot;title&quot;: &quot;波浪记忆&quot;,
+      &quot;started&quot;: &quot;2026-11-10T07:59:23.791Z&quot;,
+      &quot;finished&quot;: &quot;2026-11-10T08:01:43.891Z&quot;,
+      &quot;success&quot;: true,
+      &quot;mode&quot;: &quot;reference-guided&quot;,
+      &quot;prompt_file&quot;: &quot;references/prompt-04-wave-memory.txt&quot;,
+      &quot;reference_images&quot;: [
+        &quot;assets/references/04-wave-memory.webp&quot;
+      ],
+      &quot;parameters_explicitly_set&quot;: {
+        &quot;transparent_background&quot;: false
+      },
+      &quot;size_setting&quot;: &quot;9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed&quot;,
+      &quot;seed_setting&quot;: &quot;not provided&quot;,
+      &quot;output_file&quot;: &quot;assets/outputs/04-wave-memory.png&quot;,
+      &quot;iterations&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;05-urban-echo-text-only&quot;,
+      &quot;started&quot;: &quot;2026-11-10T08:03:30.518Z&quot;,
+      &quot;finished&quot;: &quot;2026-11-10T08:04:17.838Z&quot;,
+      &quot;success&quot;: true,
+      &quot;reference_images&quot;: [],
+      &quot;mode&quot;: &quot;text-only&quot;,
+      &quot;prompt_file&quot;: &quot;references/prompt-05-urban-echo-text-only.txt&quot;,
+      &quot;parameters_explicitly_set&quot;: {
+        &quot;transparent_background&quot;: false
+      },
+      &quot;size_setting&quot;: &quot;9:16 and highest available native resolution requested in prompt; no API size parameter was available or passed&quot;,
+      &quot;seed_setting&quot;: &quot;not provided&quot;,
+      &quot;output_file&quot;: &quot;assets/outputs/05-urban-echo-text-only.png&quot;,
+      &quot;iterations&quot;: 1
+    }
+  ],
+  &quot;comparison_limitations&quot;: &quot;Four reference-guided runs and one text-only run, one result each; prompts differ only where reference-dependent wording must be removed for the text-only run. No fixed seed, no repeats, no statistical similarity score.&quot;
+}
+</pre></details><details id="file-data"><summary>实际文件尺寸与校验值</summary><pre>[
+  {
+    &quot;id&quot;: &quot;01-rhythm-loop&quot;,
+    &quot;file&quot;: &quot;outputs/01-rhythm-loop.png&quot;,
+    &quot;format&quot;: &quot;PNG&quot;,
+    &quot;width&quot;: 941,
+    &quot;height&quot;: 1672,
+    &quot;mode&quot;: &quot;RGB&quot;,
+    &quot;bytes&quot;: 2510098,
+    &quot;sha256&quot;: &quot;a217392fc7347e472ed4550a7a944d8f6dca4f15d4933666b0a34ff48d8c521f&quot;
+  },
+  {
+    &quot;id&quot;: &quot;02-spectral-fold&quot;,
+    &quot;file&quot;: &quot;outputs/02-spectral-fold.png&quot;,
+    &quot;format&quot;: &quot;PNG&quot;,
+    &quot;width&quot;: 941,
+    &quot;height&quot;: 1672,
+    &quot;mode&quot;: &quot;RGB&quot;,
+    &quot;bytes&quot;: 2956090,
+    &quot;sha256&quot;: &quot;c446b1246aaab288a42c6c88fdbef02768f10cbaa18b0ce261083eaff62bb475&quot;
+  },
+  {
+    &quot;id&quot;: &quot;03-urban-echo&quot;,
+    &quot;file&quot;: &quot;outputs/03-urban-echo.png&quot;,
+    &quot;format&quot;: &quot;PNG&quot;,
+    &quot;width&quot;: 941,
+    &quot;height&quot;: 1672,
+    &quot;mode&quot;: &quot;RGB&quot;,
+    &quot;bytes&quot;: 2360802,
+    &quot;sha256&quot;: &quot;15942cff133029801d9eb1c6d190c3c7adfe54a69738ea992c6c0d58cae79cdb&quot;
+  },
+  {
+    &quot;id&quot;: &quot;04-wave-memory&quot;,
+    &quot;file&quot;: &quot;outputs/04-wave-memory.png&quot;,
+    &quot;format&quot;: &quot;PNG&quot;,
+    &quot;width&quot;: 941,
+    &quot;height&quot;: 1672,
+    &quot;mode&quot;: &quot;RGB&quot;,
+    &quot;bytes&quot;: 3341183,
+    &quot;sha256&quot;: &quot;b690dfd086abcf36996e3e3faf61373d4be73bc44a86ce850fea18f9c6e6eb3b&quot;
+  },
+  {
+    &quot;id&quot;: &quot;05-urban-echo-text-only&quot;,
+    &quot;file&quot;: &quot;outputs/05-urban-echo-text-only.png&quot;,
+    &quot;format&quot;: &quot;PNG&quot;,
+    &quot;width&quot;: 941,
+    &quot;height&quot;: 1672,
+    &quot;mode&quot;: &quot;RGB&quot;,
+    &quot;bytes&quot;: 2541034,
+    &quot;sha256&quot;: &quot;29164c69ab7259f9cceef5996f29bc7c0a773b382ea0a404320046f908b5d5ab&quot;
+  }
+]
+</pre></details><details id="color-data"><summary>固定区域背景采样</summary><pre>[
+  {
+    &quot;id&quot;: &quot;01-rhythm-loop&quot;,
+    &quot;sample_box_xyxy&quot;: [
+      420,
+      1560,
+      520,
+      1585
+    ],
+    &quot;meaning&quot;: &quot;Median RGB from a shared empty footer area; not a calibrated print color or global color-difference score.&quot;,
+    &quot;reference&quot;: {
+      &quot;rgb&quot;: [
+        243,
+        237,
+        218
+      ],
+      &quot;hex&quot;: &quot;#F3EDDA&quot;
+    },
+    &quot;generated&quot;: {
+      &quot;rgb&quot;: [
+        248,
+        239,
+        216
+      ],
+      &quot;hex&quot;: &quot;#F8EFD8&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;02-spectral-fold&quot;,
+    &quot;sample_box_xyxy&quot;: [
+      420,
+      1560,
+      520,
+      1585
+    ],
+    &quot;meaning&quot;: &quot;Median RGB from a shared empty footer area; not a calibrated print color or global color-difference score.&quot;,
+    &quot;reference&quot;: {
+      &quot;rgb&quot;: [
+        219,
+        162,
+        163
+      ],
+      &quot;hex&quot;: &quot;#DBA2A3&quot;
+    },
+    &quot;generated&quot;: {
+      &quot;rgb&quot;: [
+        223,
+        162,
+        160
+      ],
+      &quot;hex&quot;: &quot;#DFA2A0&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;03-urban-echo&quot;,
+    &quot;sample_box_xyxy&quot;: [
+      420,
+      1560,
+      520,
+      1585
+    ],
+    &quot;meaning&quot;: &quot;Median RGB from a shared empty footer area; not a calibrated print color or global color-difference score.&quot;,
+    &quot;reference&quot;: {
+      &quot;rgb&quot;: [
+        3,
+        58,
+        42
+      ],
+      &quot;hex&quot;: &quot;#033A2A&quot;
+    },
+    &quot;generated&quot;: {
+      &quot;rgb&quot;: [
+        1,
+        56,
+        36
+      ],
+      &quot;hex&quot;: &quot;#013824&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;04-wave-memory&quot;,
+    &quot;sample_box_xyxy&quot;: [
+      420,
+      1560,
+      520,
+      1585
+    ],
+    &quot;meaning&quot;: &quot;Median RGB from a shared empty footer area; not a calibrated print color or global color-difference score.&quot;,
+    &quot;reference&quot;: {
+      &quot;rgb&quot;: [
+        148,
+        61,
+        28
+      ],
+      &quot;hex&quot;: &quot;#943D1C&quot;
+    },
+    &quot;generated&quot;: {
+      &quot;rgb&quot;: [
+        146,
+        54,
+        17
+      ],
+      &quot;hex&quot;: &quot;#923611&quot;
+    }
+  }
+]
+</pre></details></section></main>
+<footer><p class="source">参考来源：<a href="https://www.xiaohongshu.com/explore/6af2c6c1000000001b01f805">Blue 的小红书原帖</a>。参考图与本次复刻结果在档案中分别保存。</p><p>色点仅用于识别各张海报的视觉方向，不作为经过色彩管理测量的印刷色值。检查结论与局限见实验记录。</p><p>本报告已内嵌四张参考、五张生成结果、完整提示词与实验记录，可独立保存并离线查看。打印时自动使用并排版式。</p></footer>
+</div>
+<script>
+document.documentElement.classList.add('js');
+document.querySelectorAll('.mode-buttons button').forEach(button=>{
+  button.addEventListener('click',()=>{
+    document.body.dataset.mode=button.dataset.mode;
+    document.querySelectorAll('.mode-buttons button').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+  });
+});
+document.querySelectorAll('.overlay-view input').forEach(slider=>{
+  const stage=slider.closest('.overlay-view').querySelector('.overlay-stage');
+  const update=()=>stage.style.setProperty('--split',slider.value+'%');
+  slider.addEventListener('input',update);update();
+});
+</script>
+
+</body>
+</html>
