@@ -39,15 +39,3 @@ The site entrypoint is [index.html](index.html), an exact copy of [comparison.ht
 Images remain as separate files under `assets/`; the site does not need a build step.
 
 For the first deployment, open [Settings → Pages](https://github.com/qianchencc/typographic-effects-lab/settings/pages) and select **GitHub Actions** under **Build and deployment → Source**. Then rerun the [Deploy Typographic Effects Lab to GitHub Pages](https://github.com/qianchencc/typographic-effects-lab/actions/workflows/pages.yml) workflow. Later changes to the site and images on `main` deploy automatically.
-
-
-## Bulk Pages setup (2026-11-10 repositories)
-
-The administrator can enable GitHub Actions Pages, set each repository's **About → Website** URL, and start deployment for the five projects in one pass:
-
-```bash
-gh auth status
-bash scripts/activate-five-pages.sh
-```
-
-This requires an authenticated [GitHub CLI](https://cli.github.com/) session with permission to manage Pages and repository settings. The script is [available here](scripts/activate-five-pages.sh) for inspection. It updates `lineform`, `living-ascii`, `umbra-roma`, `typographic-effects-lab`, and `wind-motion`; it does not change source visibility. Private repositories may need an eligible GitHub plan for Pages.
