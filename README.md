@@ -38,4 +38,4 @@ Website: https://qianchencc.github.io/typographic-effects-lab/
 The site entrypoint is [index.html](index.html), an exact copy of [comparison.html](comparison.html).
 Images remain as separate files under `assets/`; the site does not need a build step.
 
-For the first deployment, open [Settings → Pages](https://github.com/qianchencc/typographic-effects-lab/settings/pages) and select **GitHub Actions** under **Build and deployment → Source**. Then rerun the [Deploy Typographic Effects Lab to GitHub Pages](https://github.com/qianchencc/typographic-effects-lab/actions/workflows/pages.yml) workflow. Later changes to the site and images on `main` deploy automatically.
+Deployment is active. Site updates to `main` deploy automatically through [the GitHub Pages workflow](.github/workflows/pages.yml).
